@@ -1,5 +1,5 @@
 module Facebook
   module Messenger
-    class Error < StandardError; end
+    class MessengerError < StandardError; end
   end
 end

@@ -114,9 +114,9 @@ module Facebook
         end
       end
 
-      class RecipientNotFound < Facebook::Messenger::Error; end
-      class PermissionDenied < Facebook::Messenger::Error; end
-      class InternalError < Facebook::Messenger::Error; end
+      class RecipientNotFound < Facebook::Messenger::MessengerError; end
+      class PermissionDenied < Facebook::Messenger::MessengerError; end
+      class InternalError < Facebook::Messenger::MessengerError; end
     end
   end
 end

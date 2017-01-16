@@ -4,7 +4,7 @@ require 'openssl'
 
 module Facebook
   module Messenger
-    class BadRequestError < Error; end
+    class BadRequestError < MessengerError; end
 
     X_HUB_SIGNATURE_MISSING_WARNING = <<-HEREDOC.freeze
       The X-Hub-Signature header is not present in the request. This is

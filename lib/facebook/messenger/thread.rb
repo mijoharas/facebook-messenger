@@ -46,7 +46,7 @@ module Facebook
         )
       end
 
-      class Error < Facebook::Messenger::Error; end
+      class Error < Facebook::Messenger::MessengerError; end
     end
   end
 end

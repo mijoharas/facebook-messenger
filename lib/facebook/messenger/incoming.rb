@@ -35,7 +35,7 @@ module Facebook
         raise UnknownPayload, payload
       end
 
-      class UnknownPayload < Facebook::Messenger::Error; end
+      class UnknownPayload < Facebook::Messenger::MessengerError; end
     end
   end
 end
